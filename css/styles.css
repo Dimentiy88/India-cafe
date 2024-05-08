@@ -58,7 +58,7 @@ img {
   max-width: 1280px;
   margin: 0 auto;
 
-  outline: red 1px solid;
+  /* outline: red 1px solid; */
 }
 
 /* =-=-=-=-=-=-HEADER-=-=-=-=-=-=-= */
@@ -95,4 +95,54 @@ img {
   color: #fff;
 
   padding: 40px 0;
+}
+
+/* -=-=-=-=-=-HERO-=-=-=-=-=- */
+
+.hero {
+  background-image: url(../images/bgr-hero-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero-title {
+  font-family: var(--font3);
+  font-weight: 400;
+  font-size: 60px;
+  color: #fff;
+  padding-top: 186px;
+  padding-bottom: 57px;
+}
+.hero-btn-wrapper {
+  padding-bottom: 294px;
+}
+.hero-first-btn {
+  border-radius: 999px;
+  border: none;
+  width: 190px;
+  padding: 8px 0 8px 0;
+
+  background: #dd7230;
+  cursor: pointer;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #fff;
+}
+.hero-second-btn {
+  border-radius: 999px;
+  border: none;
+  width: 190px;
+  padding: 8px 0 8px 0;
+
+  background: #010101;
+  cursor: pointer;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #fff;
 }
