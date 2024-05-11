@@ -55,52 +55,115 @@ img {
   list-style: none;
 }
 .container {
-  max-width: 1280px;
+  min-width: 320px;
+  max-width: 428px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 
   /* outline: red 1px solid; */
 }
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
 
 /* =-=-=-=-=-=-HEADER-=-=-=-=-=-=-= */
-
+.header-page {
+  background-color: #584747;
+}
 .header-container {
-  padding: 0 56px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  min-height: 104px;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
-  background-color: #584747;
 }
-.header-nav {
+@media only screen and (min-width: 768px) {
+  .header-container {
+    justify-content: space-between;
+    min-height: 65px;
+  }
 }
+@media only screen and (min-width: 1280px) {
+  .header-container {
+    justify-content: space-between;
+    min-height: 104px;
+  }
+}
+
 .header-logo {
   font-family: var(--font3);
   font-weight: 400;
-  font-size: 60px;
+  font-size: 38px;
   color: #dd7230;
+}
+@media only screen and (min-width: 768px) {
+  .header-logo {
+    font-size: 38px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .header-logo {
+    font-size: 60px;
+  }
 }
 .menu-list {
   display: flex;
   gap: 50px;
 }
-.menu-item {
+@media only screen and (max-width: 767px) {
+  .menu-list {
+    display: none;
+  }
 }
+@media only screen and (min-width: 768px) {
+  .menu-list {
+    gap: 20px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .menu-list {
+    gap: 50px;
+  }
+}
+
 .nav-list {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 20px;
+  font-size: 12px;
   line-height: 120%;
   color: #fff;
 
-  padding: 40px 0;
+  padding: 20px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-list {
+    font-size: 12px;
+    padding: 40px 0;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .nav-list {
+    font-size: 20px;
+    padding: 40px 0;
+  }
 }
 
 /* -=-=-=-=-=-HERO-=-=-=-=-=- */
 
 .hero {
-  background-image: url(../images/bgr-hero-img.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/bgr-hero-img.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
