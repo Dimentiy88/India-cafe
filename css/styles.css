@@ -58,8 +58,8 @@ img {
   min-width: 320px;
   max-width: 428px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 24px;
+  padding-right: 24px;
 
   /* outline: red 1px solid; */
 }
@@ -158,26 +158,85 @@ img {
     padding: 40px 0;
   }
 }
+.nav-list:hover,
+.nav-list:focus {
+  color: #dd7230;
+}
 
 /* -=-=-=-=-=-HERO-=-=-=-=-=- */
 
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../images/bgr-hero-img.png);
+    url(../images/bgr-hero-img-tel.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  padding-top: 58px;
+  padding-bottom: 171px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../images/bgr-hero-img-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    padding-top: 121px;
+    padding-bottom: 504px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../images/bgr-hero-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    padding-top: 186px;
+    padding-bottom: 294px;
+  }
 }
 .hero-title {
   font-family: var(--font3);
   font-weight: 400;
-  font-size: 60px;
+  font-size: 40px;
   color: #fff;
-  padding-top: 186px;
-  padding-bottom: 57px;
+
+  max-width: 351px;
+  margin-bottom: 54px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .hero-title {
+    font-size: 60px;
+    max-width: 761px;
+    margin-bottom: 57px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-title {
+    font-size: 60px;
+    max-width: 761px;
+    margin-bottom: 57px;
+  }
 }
 .hero-btn-wrapper {
-  padding-bottom: 294px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 18px;
+  row-gap: 38px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-btn-wrapper {
+    justify-content: start;
+  }
 }
 .hero-first-btn {
   border-radius: 999px;
@@ -185,7 +244,7 @@ img {
   width: 190px;
   padding: 8px 0 8px 0;
 
-  background: #dd7230;
+  background: #010101;
   cursor: pointer;
 
   font-family: var(--font-family);
@@ -208,4 +267,10 @@ img {
   font-size: 20px;
   line-height: 120%;
   color: #fff;
+}
+.hero-first-btn:hover,
+.hero-second-btn:hover,
+.hero-first-btn:focus,
+.hero-second-btn:focus {
+  background: #dd7230;
 }
