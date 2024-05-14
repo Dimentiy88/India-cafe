@@ -66,8 +66,8 @@ img {
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -167,7 +167,7 @@ img {
 
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../images/bgr-hero-img-tel.jpg);
+    url(../images/bgr-images/bgr-hero-img-tel.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -179,7 +179,7 @@ img {
 @media only screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url(../images/bgr-hero-img-tablet.jpg);
+      url(../images/bgr-images/bgr-hero-img-tablet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -192,7 +192,7 @@ img {
 @media only screen and (min-width: 1280px) {
   .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url(../images/bgr-hero-img.png);
+      url(../images/bgr-images/bgr-hero-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -273,4 +273,51 @@ img {
 .hero-first-btn:focus,
 .hero-second-btn:focus {
   background: #dd7230;
+}
+
+.galerey {
+  background-color: #584747;
+}
+
+.galerey-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  row-gap: 58px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media only screen and (min-width: 768px) {
+  .galerey-wrapper {
+    column-gap: 60px;
+    row-gap: 37px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .galerey-wrapper {
+    column-gap: 15px;
+    row-gap: 30px;
+  }
+}
+
+.galerey-title {
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60%;
+  color: #fad1b4;
+}
+@media only screen and (min-width: 768px) {
+  .galerey-title {
+    font-size: 60px;
+    line-height: 40%;
+  }
+}
+.title-wrapper {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  background: #5d5050;
 }
