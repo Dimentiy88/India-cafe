@@ -389,7 +389,9 @@ img {
   color: #010101;
   margin-top: 15px;
 }
+
 /* =-==-=-=-=-=-reviews=-=-=---=- */
+
 .reviews {
   background: #fad1b4;
 }
@@ -415,8 +417,15 @@ img {
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews__items {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 .item-reviews {
@@ -531,4 +540,45 @@ img {
 
 .reviews__item.active {
   display: block;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 0 20px;
+  padding-bottom: 30px;
+  gap: 20px;
+}
+
+.reviews-btn {
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 5px 5px;
+  fill: #dd7230;
+  background-color: #000;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reviews-btn:hover,
+.reviews-btn:focus {
+  background-color: #dd7230;
+  fill: #000;
+}
+
+.reviews-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.icon-next-btn {
+  transform: rotate(180deg);
 }

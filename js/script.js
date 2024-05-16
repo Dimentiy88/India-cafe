@@ -19,7 +19,7 @@ function showPrevItem() {
 }
 
 function handleWindowSizeChange() {
-  if (window.innerWidth <= 425) {
+  if (window.innerWidth <= 576) {
     nextBtn.style.display = "block";
     prevBtn.style.display = "block";
     showItem(currentItem);
