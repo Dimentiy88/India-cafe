@@ -33,7 +33,6 @@ function handleWindowSizeChange() {
 nextBtn.addEventListener("click", showNextItem);
 prevBtn.addEventListener("click", showPrevItem);
 
-// Показываем первый элемент при загрузке страницы
 showItem(currentItem);
 
 window.addEventListener("resize", handleWindowSizeChange);
