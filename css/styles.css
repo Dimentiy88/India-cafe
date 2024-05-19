@@ -60,6 +60,7 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 40px;
 
   /* outline: red 1px solid; */
 }
@@ -68,6 +69,7 @@ img {
     max-width: 768px;
     padding-left: 25px;
     padding-right: 25px;
+    padding-bottom: inherit;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -277,6 +279,8 @@ img {
   background: #dd7230;
 }
 
+/* -=-=-=-=-=-=-= galerey =-=-=-=-=-=- */
+
 .galerey {
   background-color: #584747;
 }
@@ -332,7 +336,9 @@ img {
   padding-bottom: 30px;
   background: #5d5050;
 }
+
 /* -=-=-=-=-recommendations=-=-=-=- */
+
 .recommend-title {
   display: flex;
   justify-content: center;
@@ -390,6 +396,20 @@ img {
   line-height: 150%;
   color: #010101;
   margin-top: 15px;
+}
+
+.show-more-btn {
+  margin: auto;
+  padding: 8px 34px;
+  border-radius: 999px;
+  border: none;
+  background: #dd7230;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #fff;
 }
 
 /* =-==-=-=-=-=-reviews=-=-=---=- */
@@ -693,6 +713,8 @@ img {
     justify-content: center;
   }
 }
+
+/* -==-=-=-= Scroll BTN =-=-=-=-= */
 
 .up-button.shown {
   opacity: 1;
