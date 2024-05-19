@@ -693,3 +693,40 @@ img {
     justify-content: center;
   }
 }
+
+.up-button.shown {
+  opacity: 1;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.up-button {
+  opacity: 0;
+  position: fixed;
+  right: 10px;
+  bottom: 50px;
+  cursor: pointer;
+  display: block;
+  font-size: 15px;
+  color: #fff;
+  border: 2px;
+  background: radial-gradient(
+    183.6% 183.01% at 59.76% -23.42%,
+    #dd7230 18.03%,
+    #000 105%
+  );
+  padding: 15px 10px;
+  border-radius: 10px;
+  z-index: 15;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.up-button:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (min-width: 768px) {
+  .up-button {
+    right: 20px;
+    font-size: 25px;
+  }
+}
