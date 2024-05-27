@@ -23,6 +23,9 @@ html {
   font-family: "Open Sans", sans-serif;
   margin: 0;
 }
+/* body.modal-open {
+  overflow: hidden;
+} */
 
 h1,
 h2,
@@ -88,18 +91,16 @@ img {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
 }
 @media only screen and (min-width: 768px) {
   .header-container {
-    justify-content: space-between;
     min-height: 65px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .header-container {
-    justify-content: space-between;
     min-height: 104px;
   }
 }
@@ -141,6 +142,7 @@ img {
 }
 
 .nav-list {
+  position: relative;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 12px;
@@ -148,6 +150,22 @@ img {
   color: #fff;
 
   padding: 20px 0;
+}
+.nav-list::after {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+}
+
+.nav-list.current::after,
+.nav-list:hover::after,
+.nav-list:focus::after {
+  background-color: #dd7230;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1026,4 +1044,78 @@ img {
 .button-link:hover,
 .button-link:focus {
   background: #dd7230;
+}
+
+/* Mobile menu */
+.menu-toggle {
+  min-height: 28px;
+  min-width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: 3px solid #dd7230;
+  color: #dd7230;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #584747;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #dd7230;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.mobile-list.current,
+.mobile-list:hover,
+.mobile-list:focus {
+  color: #dd7230;
 }
