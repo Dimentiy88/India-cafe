@@ -1119,3 +1119,46 @@ img {
 .mobile-list:focus {
   color: #dd7230;
 }
+
+/* =-=-=-=-=-ABOUN SECTION=-=-=-=-=- */
+.about {
+  background-color: #5d5050;
+}
+.about-wrapper {
+  padding-bottom: 150px;
+}
+.about-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 40%;
+  color: #fad1b4;
+
+  padding: 100px 0 100px;
+  text-align: center;
+}
+.about-list {
+}
+.list {
+}
+.about-item {
+  display: flex;
+  align-items: center;
+  background: #584747;
+
+  padding: 60px;
+  gap: 20px;
+}
+
+.about-item:not(:last-child) {
+  margin-bottom: 50px;
+}
+.about-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #fff;
+}
+.slogan {
+}
