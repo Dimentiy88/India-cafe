@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -58,54 +59,74 @@
             <div class="about-wrapper container">
                 <h2 class="about-title">About</h2>
                 <ul class="about-list list">
-                    <li class="about-item">
-                        <img src="./images/img/about/image-58.jpg" alt="">
-                        <p class="about-text">
-                            <span class="slogan">India Cafe</span> serves the Chambersburg area with delicious indian
-                            cuisine. Our
-                            specialty dishes
-                            have
-                            been well-crafted to create a delightful culinary experience. Enjoy the convenience of
-                            pickup or
-                            delivery when ordering through Beyond Menu.
-                        </p>
+                    <li class="about-item" data-aos="fade-right">
+                        <img class="about-img" src="./images/img/about/image-58.jpg" alt="" width="408" height="328">
+                        <div class="overlay">
+                            <p class="about-text">
+                                <span class="slogan">India Cafe</span> serves the Chambersburg area with delicious
+                                indian
+                                cuisine. Our
+                                specialty dishes
+                                have
+                                been well-crafted to create a delightful culinary experience. Enjoy the convenience of
+                                pickup or
+                                delivery when ordering through Beyond Menu.
+                            </p>
+                        </div>
                     </li>
-                    <li class="about-item">
-                        <p class="about-text">
-                            <span class="slogan">Community and Culture</span>: Beyond the confines of our kitchen, India
-                            Cafe is closely connected
-                            with
-                            the local community. We believe in fostering relationships and sharing the joy of good food.
-                            From cultural events to community outreach, we aim to be more than just a cafe; we strive to
-                            create an atmosphere of belonging and celebration.
-                        </p>
-                        <img src="./images/img/about/frame-31.jpg" alt="">
+                    <li class="about-item" data-aos="fade-right">
+                        <img class="about-img" src="./images/img/about/frame-31.jpg" alt="" width="408" height="328">
+                        <div class="overlay">
+                            <p class="about-text">
+                                <span class="slogan">Community and Culture</span>: Beyond the confines of our kitchen,
+                                India
+                                Cafe is closely connected
+                                with
+                                the local community. We believe in fostering relationships and sharing the joy of good
+                                food.
+                                From cultural events to community outreach, we aim to be more than just a cafe; we
+                                strive to
+                                create an atmosphere of belonging and celebration.
+                            </p>
+                        </div>
                     </li>
-                    <li class="about-item">
-                        <img src="/images/img/about/frame-33.jpg" alt="">
-                        <p class="about-text">
-                            <span class="slogan">Our talented chefs at India Cafe</span> are masters of Indian cuisine,
-                            each bringing their own
-                            unique
-                            touch to create our signature dishes. They carefully select spices and ingredients to ensure
-                            that each dish is not only delicious, but also reflects the rich cultural mosaic of India.
-                            With
-                            their unmatched skill and passion for cooking, our chefs ensure that every visit to India
-                            Cafe
-                            is an unforgettable culinary journey
-                        </p>
+                    <li class="about-item" data-aos="fade-right">
+                        <img class="about-img" src="/images/img/about/frame-33.jpg" alt="" width="408" height="328">
+                        <div class="overlay">
+                            <p class="about-text">
+                                <span class="slogan">Our talented chefs at India Cafe</span> are masters of Indian
+                                cuisine,
+                                each bringing their own
+                                unique
+                                touch to create our signature dishes. They carefully select spices and ingredients to
+                                ensure
+                                that each dish is not only delicious, but also reflects the rich cultural mosaic of
+                                India.
+                                With
+                                their unmatched skill and passion for cooking, our chefs ensure that every visit to
+                                India
+                                Cafe
+                                is an unforgettable culinary journey
+                            </p>
+                        </div>
                     </li>
-                    <li class="about-item">
-                        <p class="about-text">
-                            <span class="slogan">Culinary Adventure</span>: India Cafe transforms every visit into not
-                            just a meal, but a tour of
-                            India’s flavors. Our menu reflects the richness of various regional traditions – from the
-                            spicy
-                            seasonings of the North to the coastal gastronomic pleasures of the South. Each dish is a
-                            story
-                            that invites you to experience the rich culture and authenticity encapsulated in every bite.
-                        </p>
-                        <img src="/images/img/about/frame-32.jpg" alt="">
+                    <li class="about-item" data-aos="fade-right">
+                        <img class="about-img" src="/images/img/about/frame-32.jpg" alt="" width="408" height="328">
+                        <div class="overlay">
+                            <p class="about-text">
+                                <span class="slogan">Culinary Adventure</span>: India Cafe transforms every visit into
+                                not
+                                just a meal, but a tour of
+                                India’s flavors. Our menu reflects the richness of various regional traditions – from
+                                the
+                                spicy
+                                seasonings of the North to the coastal gastronomic pleasures of the South. Each dish is
+                                a
+                                story
+                                that invites you to experience the rich culture and authenticity encapsulated in every
+                                bite.
+                            </p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -269,7 +290,9 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
-    <script defer src="./js/mobile-menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/animation.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 
 </body>
