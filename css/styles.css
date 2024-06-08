@@ -1260,3 +1260,78 @@ img {
   color: #ff6100;
   font-weight: 600;
 }
+
+/*! =-=-=-=-=-=-=-=MENU=-=-=-=-=-=-= */
+
+.menu {
+  background-color: #5d5050;
+}
+.menu-wrapper {
+  padding-bottom: 150px;
+}
+.menu-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 40%;
+  color: #fad1b4;
+  padding: 100px 0 100px;
+  text-align: center;
+}
+.wrapper-menu-list {
+  padding: 45px;
+  background-color: #584747;
+}
+
+/* -=-=-=-=-=vegetarian-menu=-=-=-=-=- */
+
+.vegetarian-menu {
+}
+.vegetarian-menu-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 50%;
+
+  margin-bottom: 70px;
+  color: #dd7230;
+}
+.vegetarian-list {
+  margin-bottom: 200px;
+}
+.vegetarian-list-item {
+}
+.vegetarian-img {
+}
+.vegetarian-text-wrapper {
+}
+.vegetarian-text {
+}
+.vegetarian-text-name {
+}
+
+/* -=-=-=-=-=-=-=not-vegetarian-menu=-=-=-=-==-=- */
+
+.not-vegetarian-menu {
+}
+.not-vegetarian-menu-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 50%;
+
+  margin-bottom: 70px;
+  color: #dd7230;
+}
+.not-vegetarian-list {
+}
+.not-vegetarian-list-item {
+}
+.not-vegetarian-img {
+}
+.not-vegetarian-text-wrapper {
+}
+.not-vegetarian-text {
+}
+.not-vegetarian-text-name {
+}
