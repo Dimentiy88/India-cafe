@@ -121,27 +121,27 @@ img {
     font-size: 60px;
   }
 }
-.menu-list {
+.nav-list {
   display: flex;
   gap: 50px;
 }
 @media only screen and (max-width: 767px) {
-  .menu-list {
+  .nav-list {
     display: none;
   }
 }
 @media only screen and (min-width: 768px) {
-  .menu-list {
+  .nav-list {
     gap: 20px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .menu-list {
+  .nav-list {
     gap: 50px;
   }
 }
 
-.nav-list {
+.nav-list-link {
   position: relative;
   font-family: var(--font-family);
   font-weight: 400;
@@ -151,7 +151,7 @@ img {
 
   padding: 20px 0;
 }
-.nav-list::after {
+.nav-list-link::after {
   content: "";
   position: absolute;
   bottom: 15px;
@@ -162,26 +162,26 @@ img {
   border-radius: 4px;
 }
 
-.nav-list.current::after,
-.nav-list:hover::after,
-.nav-list:focus::after {
+.nav-list-link.current::after,
+.nav-list-link:hover::after,
+.nav-list-link:focus::after {
   background-color: #dd7230;
 }
 
 @media only screen and (min-width: 768px) {
-  .nav-list {
+  .nav-list-link {
     font-size: 12px;
     padding: 24px 0;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .nav-list {
+  .nav-list-link {
     font-size: 20px;
     padding: 40px 0;
   }
 }
-.nav-list:hover,
-.nav-list:focus {
+.nav-list-link:hover,
+.nav-list-link:focus {
   color: #dd7230;
 }
 
@@ -1279,15 +1279,11 @@ img {
   text-align: center;
 }
 .wrapper-menu-list {
-  padding: 45px;
+  padding: 30px;
   background-color: #584747;
 }
 
-/* -=-=-=-=-=vegetarian-menu=-=-=-=-=- */
-
-.vegetarian-menu {
-}
-.vegetarian-menu-title {
+.second-menu-title {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 48px;
@@ -1296,42 +1292,43 @@ img {
   margin-bottom: 70px;
   color: #dd7230;
 }
-.vegetarian-list {
-  margin-bottom: 200px;
+.menu-list {
+  margin-bottom: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  column-gap: 30px;
 }
-.vegetarian-list-item {
-}
-.vegetarian-img {
-}
-.vegetarian-text-wrapper {
-}
-.vegetarian-text {
-}
-.vegetarian-text-name {
+.second-menu-list {
+  margin-bottom: 0;
 }
 
-/* -=-=-=-=-=-=-=not-vegetarian-menu=-=-=-=-==-=- */
-
-.not-vegetarian-menu {
+.menu-list-item {
+  width: 570px;
+  position: relative;
 }
-.not-vegetarian-menu-title {
+
+.menu-text-wrapper {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+
+  display: grid;
+  height: 162px;
+  max-width: 281px;
+  padding: 10px;
+
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 48px;
-  line-height: 50%;
+  font-size: 12px;
+  color: #fff;
+  line-height: 1.2;
 
-  margin-bottom: 70px;
-  color: #dd7230;
+  background: rgba(255, 255, 255, 0.25);
 }
-.not-vegetarian-list {
-}
-.not-vegetarian-list-item {
-}
-.not-vegetarian-img {
-}
-.not-vegetarian-text-wrapper {
-}
-.not-vegetarian-text {
-}
-.not-vegetarian-text-name {
+
+.menu-text-name {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
 }
